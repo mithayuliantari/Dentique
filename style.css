@@ -101,7 +101,7 @@ header {
 
   .hero-image {
     flex: 1;
-    max-width: 50%; /* Batasi lebar gambar */
+    max-width: 50%; 
     display: flex;
     justify-content: flex-end;
   }
@@ -110,7 +110,7 @@ header {
     max-width: 100%;
     height: auto;
     object-fit: cover;
-    border-radius: 10px; /* Opsional untuk estetika */
+    border-radius: 10px; 
   }
   
 
@@ -118,7 +118,6 @@ header {
   display: flex;
   justify-content: center ;
   margin-top: -70px; 
-  /* gap: 20px; */
   z-index: 50;
   position: relative;
   background-color: #fff;
@@ -128,7 +127,6 @@ header {
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 30px;
-  /* flex-basis: 300px; */
   display: flex;
   align-items: center;
 }
