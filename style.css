@@ -1,0 +1,743 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px 40px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo-container img {
+    height: 40px;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li a {
+    color: #333;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .contact-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .contact-info p {
+    margin-right: 20px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  .book-now-btn {
+    background-color: #40e0d0;
+    color: #212121;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #f5f5f5; */
+    padding: 60px;
+    padding-top: 0;
+    padding-right: 0px;
+  }
+  
+  .hero-content {
+    flex: 1;
+    max-width: 50%; 
+    padding-bottom: 50px;
+  }
+  
+ .hero-content h1{
+  font-size: 48px;
+  margin: 0;
+  margin-bottom: 20px;
+ }
+
+ .hero-content p{
+  font-size: 16px;
+  word-wrap: break-word;
+  width: 500px;
+  margin-bottom: 20px;
+ }
+
+  .hero-image {
+    flex: 1;
+    max-width: 50%; /* Batasi lebar gambar */
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .hero-image img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px; /* Opsional untuk estetika */
+  }
+  
+
+.info-containers {
+  display: flex;
+  justify-content: center ;
+  margin-top: -70px; 
+  /* gap: 20px; */
+  z-index: 50;
+  position: relative;
+  background-color: #fff;
+}
+
+.info-container {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  /* flex-basis: 300px; */
+  display: flex;
+  align-items: center;
+}
+
+.info-icon {
+  margin-right: 20px;
+  font-size: 30px;
+  color: #fff;
+  background-color: #40e0d0;
+  padding: 8px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: top;
+}
+
+.info-content h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.info-container p{
+  font-size: 14px;
+  align-items: center;
+}
+
+.book-appointment-link {
+  color: #40e0d0;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+
+
+/* Section Services */
+.services {
+  width: 100%;
+  padding: 60px 80px;
+}
+
+/* Header Section */
+.services-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.services-title {
+  max-width: 600px;
+}
+
+.badge {
+  display: inline-block;
+  background: #cafdf3;
+  color: #0cc0b1;
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+.services-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #1c1c1e;
+}
+
+.btn-primary {
+  background-color: #40e0d0;
+  color: #212121;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0cc0b1;
+}
+
+/* Service Cards */
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.service-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  padding-bottom: 40px;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Icon setengah atas */
+.service-icon {
+  background: #f3f1ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  padding: 30px;
+}
+
+.service-icon img {
+  width: 80px;
+  height: auto;
+}
+
+/* Info setengah bawah */
+.service-info {
+  padding: 20px;
+  text-align: center;
+}
+
+.service-info h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #1c1c1e;
+  margin-bottom: 10px;
+}
+
+.service-info p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.learn-more {
+  color: #6C5CE7;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.image-container {
+    position: relative;
+    width: 500px;
+    height: auto;
+}
+
+.top-image {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.bottom-image {
+    width: 70%;
+    position: absolute;
+    bottom: -120px;
+    right: -30px;
+    border-radius: 12px;
+    z-index: 1;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-us {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 40px;
+  background-color: #f5f5f5;
+}
+
+.about-images {
+  flex-basis: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.about-content {
+    flex-basis: 50%;
+    padding: 50px;
+}
+
+.about-content h2 {
+  word-wrap: break-word;
+  width: 500px;
+}
+
+.about-img{
+  flex-basis: 50%;
+  padding: 50px;
+  margin-bottom: 120px;
+}
+
+.about-tag {
+  display: inline-block;
+  background: #cafdf3;
+  color: #0cc0b1;
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+.about-content h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.about-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  word-wrap: break-word;
+  width: 600px;
+  
+}
+
+.team-member {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.member-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+.member-info h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.member-info p {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+}
+
+.about-btn {
+    display: inline-block;
+    background-color: #40e0d0;
+    color: #212121;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.about-btn:hover {
+    background-color: #0cc0b1;
+}
+
+
+
+.customer-reviews {
+    padding: 80px 40px;
+    text-align: center;
+}
+  
+.customer-reviews h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+  
+.review-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+  
+.review-item {
+    flex-basis: 30%;
+    background-color: #f3f1ff;
+    padding: 40px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+  
+.review-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 20px;
+}
+  
+.review-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+  
+.review-text h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+  
+.review-text p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+  
+.cta-button {
+    margin-bottom: 40px;
+}
+  
+.book-appointment-btn {
+    display: inline-block;
+    background-color: #40e0d0;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+
+  
+.review-navigation {
+    display: flex;
+    justify-content: center;
+}
+  
+.review-navigation button {
+    background-color: #40e0d0;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    margin: 0 5px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.appointment-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3f1ff;
+    color: #212121;
+    padding-left: 50px;
+    max-width:max-content;
+    max-height: 495px;
+    gap: 30px;
+}
+  
+.appointment-content {
+    flex-basis: 50%;
+}
+  
+.appointment-content h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+  
+.book-appointment-btn {
+    display: inline-block;
+    background-color: #40e0d0;
+    color: black;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-size: 16px;
+    border: none;
+    font-weight: bold;
+}
+
+.book-appointment-btn:hover{
+  background-color: #0cc0b1 ;
+}
+  
+.appointment-image {
+    flex-basis: 50%;
+    text-align: right;
+}
+  
+.appointment-image img {
+    max-width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+
+.contact-us {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    padding: 80px 40px;
+}
+  
+.contact-content {
+    flex-basis: 40%;
+    padding-top: 80px;
+}
+  
+.contact-content h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+ }
+  
+.contact-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+  
+.contact-info {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+  
+.contact-method {
+    display: flex;
+    align-items: center;
+}
+  
+.contact-method i {
+    font-size: 20px;
+    color: #40e0d0;
+    margin-right: 10px;
+}
+  
+.contact-method a {
+    color: #333;
+    text-decoration: none;
+}
+  
+.contact-form {
+    flex-basis: 30%;
+    background-color: #fff;
+    border: #1c1c1e;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+  
+.form-group {
+    margin-bottom: 20px;
+}
+  
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+  
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+  
+.form-group textarea {
+    resize: vertical;
+}
+  
+.submit-btn {
+    display: block;
+    width: 100%;
+    background-color: #40e0d0;
+    color: #212121;
+    border: none;
+    padding: 12px 24px;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.submit-btn:hover{
+  background-color: #0cc0b1;
+}
+
+
+.site-footer {
+  background-color: #f5f5f5;
+  padding: 60px 40px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.footer-logo {
+  flex-basis: 20%;
+  margin-left: 90px;
+}
+
+.footer-logo p{
+  font-size: 16px;
+
+}
+
+.footer-logo img {
+  max-width: 150px;
+}
+
+.footer-subscribe {
+  flex-basis: 30%;
+}
+
+.footer-subscribe h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-subscribe p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.subscribe-form {
+  display: flex;
+}
+
+.subscribe-form input {
+  flex-grow: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+}
+
+.subscribe-btn {
+  background-color: #40e0d0;
+  color: #212121;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.subscribe-btn:hover{
+  background-color: #0cc0b1;
+}
+
+.footer-menu h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-menu li {
+  margin-bottom: 10px;
+}
+
+.footer-menu a {
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.footer-contact {
+  flex-basis: 20%;
+}
+
+.footer-contact h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-contact p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+}
