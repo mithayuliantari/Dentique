@@ -37,6 +37,10 @@ header {
     font-size: 16px;
     font-weight: bold;
   }
+
+  nav ul li a:hover{
+    color: #079a91;
+  }
   
   .contact-info {
     display: flex;
@@ -48,6 +52,10 @@ header {
     font-size: 16px;
     font-weight: 600;
   }
+  .contact-info p:hover{
+    color: #079a91;
+    cursor: pointer;
+  }
   
   .book-now-btn {
     background-color: #40e0d0;
@@ -58,12 +66,14 @@ header {
     font-size: 16px;
     font-weight: bold;
   }
+  .book-now-btn:hover{
+    background-color: #0cc0b1;
+  }
 
   .hero {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* background-color: #f5f5f5; */
     padding: 60px;
     padding-top: 0;
     padding-right: 0px;
@@ -86,6 +96,7 @@ header {
   word-wrap: break-word;
   width: 500px;
   margin-bottom: 20px;
+  color: #757575;
  }
 
   .hero-image {
@@ -126,7 +137,7 @@ header {
   margin-right: 20px;
   font-size: 30px;
   color: #fff;
-  background-color: #40e0d0;
+  background-color: #079a91;
   padding: 8px;
   border-radius: 10px;
   display: flex;
@@ -144,21 +155,23 @@ header {
 }
 
 .book-appointment-link {
-  color: #40e0d0;
+  color: #0cc0b1;
   text-decoration: none;
   font-size: 14px;
   font-weight: bold;
 }
+.book-appointment-link:hover{
+  color: #079a91;
+}
 
 
 
-/* Section Services */
+
 .services {
   width: 100%;
   padding: 60px 80px;
+  margin-top: 40px;
 }
-
-/* Header Section */
 .services-header {
   display: flex;
   justify-content: space-between;
@@ -181,7 +194,7 @@ header {
 }
 
 .services-title h2 {
-  font-size: 32px;
+  font-size: 36px;
   font-weight: bold;
   margin-top: 10px;
   color: #1c1c1e;
@@ -202,7 +215,6 @@ header {
   background-color: #0cc0b1;
 }
 
-/* Service Cards */
 .services-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -222,7 +234,7 @@ header {
   transform: translateY(-5px);
 }
 
-/* Icon setengah atas */
+
 .service-icon {
   background: #f3f1ff;
   display: flex;
@@ -237,14 +249,13 @@ header {
   height: auto;
 }
 
-/* Info setengah bawah */
 .service-info {
   padding: 20px;
   text-align: center;
 }
 
 .service-info h3 {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
   color: #1c1c1e;
   margin-bottom: 10px;
@@ -257,10 +268,13 @@ header {
 }
 
 .learn-more {
-  color: #6C5CE7;
-  font-size: 14px;
+  color: #0cc0b1;
+  font-size: 18px;
   font-weight: bold;
   text-decoration: none;
+}
+.learn-more:hover{
+  color: #079a91;
 }
 
 
@@ -302,8 +316,10 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0px 40px;
+  padding: 0px 80px;
   background-color: #f5f5f5;
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
 
 .about-images {
@@ -317,6 +333,7 @@ header {
 .about-content {
     flex-basis: 50%;
     padding: 50px;
+    margin-left: 100px;
 }
 
 .about-content h2 {
@@ -341,7 +358,7 @@ header {
 }
 
 .about-content h2 {
-  font-size: 32px;
+  font-size: 36px;
   font-weight: bold;
   margin-bottom: 20px;
   margin-top: 10px;
@@ -393,6 +410,7 @@ header {
     font-weight: bold;
     transition: background 0.3s ease;
 }
+
 
 .about-btn:hover {
     background-color: #0cc0b1;
@@ -446,7 +464,7 @@ header {
 }
   
 .review-text p {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.6;
 }
   
@@ -480,6 +498,9 @@ header {
     border-radius: 4px;
     cursor: pointer;
 }
+.review-navigation button:hover{
+  background-color: #0cc0b1;
+}
 
 .appointment-section {
     display: flex;
@@ -491,6 +512,7 @@ header {
     max-width:max-content;
     max-height: 495px;
     gap: 30px;
+    margin: 20px 0;
 }
   
 .appointment-content {
@@ -540,7 +562,7 @@ header {
   
 .contact-content {
     flex-basis: 40%;
-    padding-top: 80px;
+    padding-top: 180px;
 }
   
 .contact-content h2 {
@@ -592,7 +614,7 @@ header {
   
 .form-group label {
     display: block;
-    font-size: 14px;
+    font-size: 20px;
     font-weight: bold;
     margin-bottom: 5px;
 }
@@ -602,7 +624,7 @@ header {
 .form-group select {
     width: 100%;
     padding: 10px;
-    font-size: 16px;
+    font-size: 14px;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
@@ -615,13 +637,14 @@ header {
     display: block;
     width: 100%;
     background-color: #40e0d0;
-    color: #212121;
+    color: black;
     border: none;
     padding: 12px 24px;
     font-weight: bold;
     font-size: 16px;
     border-radius: 4px;
     cursor: pointer;
+    
 }
 
 .submit-btn:hover{
@@ -631,7 +654,8 @@ header {
 
 .site-footer {
   background-color: #f5f5f5;
-  padding: 60px 40px;
+  padding: 80px 40px;
+  margin-top: 20px;
 }
 
 .footer-content {
@@ -647,12 +671,13 @@ header {
 }
 
 .footer-logo p{
-  font-size: 16px;
+  font-size: 14px;
+  font-weight: 500;
 
 }
 
 .footer-logo img {
-  max-width: 150px;
+  max-width: 250px;
 }
 
 .footer-subscribe {
@@ -666,7 +691,7 @@ header {
 }
 
 .footer-subscribe p {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.6;
   margin-bottom: 20px;
 }
@@ -677,7 +702,7 @@ header {
 
 .subscribe-form input {
   flex-grow: 1;
-  padding: 10px;
+  padding: 15px;
   font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 4px 0 0 4px;
@@ -685,9 +710,9 @@ header {
 
 .subscribe-btn {
   background-color: #40e0d0;
-  color: #212121;
+  color: black;
   border: none;
-  padding: 10px 20px;
+  padding: 10px 15px;
   font-size: 16px;
   border-radius: 0 4px 4px 0;
   cursor: pointer;
@@ -708,6 +733,7 @@ header {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  
 }
 
 .footer-menu li {
@@ -717,7 +743,12 @@ header {
 .footer-menu a {
   color: #333;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.footer-menu a:hover{
+  color: #079a91;
 }
 
 .footer-contact {
@@ -731,9 +762,10 @@ header {
 }
 
 .footer-contact p {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.6;
   margin-bottom: 10px;
+  font-weight: 500;
 }
 
 .footer-bottom {
