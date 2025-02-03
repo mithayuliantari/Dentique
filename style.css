@@ -26,6 +26,7 @@ header {
   
   .logo-container img {
     height: 40px;
+    cursor: pointer;
   }
   
   nav ul {
@@ -36,7 +37,7 @@ header {
   }
   
   nav ul li a {
-    color: #333;
+    color: #212121;
     text-decoration: none;
     padding: 10px 15px;
     font-size: 16px;
@@ -66,7 +67,7 @@ header {
     background-color: #40e0d0;
     color: #212121;
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 8px 15px;
     border-radius: 4px;
     font-size: 16px;
     font-weight: bold;
@@ -102,7 +103,7 @@ header {
   word-wrap: break-word;
   width: 500px;
   margin-bottom: 20px;
-  color: #757575;
+  color: #666;
  }
 
   .hero-image {
@@ -202,7 +203,7 @@ header {
   font-size: 36px;
   font-weight: bold;
   margin-top: 10px;
-  color: #1c1c1e;
+  color: #212121;
 }
 
 .btn-primary {
@@ -262,7 +263,7 @@ header {
 .service-info h3 {
   font-size: 20px;
   font-weight: bold;
-  color: #1c1c1e;
+  color: #212121;
   margin-bottom: 10px;
 }
 
@@ -303,6 +304,7 @@ header {
 }
 
 .top-image {
+  position: relative;
     width: 100%;
     border-radius: 12px;
 }
@@ -533,7 +535,7 @@ header {
 .book-appointment-btn {
     display: inline-block;
     background-color: #40e0d0;
-    color: black;
+    color: #212121;
     text-decoration: none;
     padding: 12px 24px;
     border-radius: 4px;
@@ -580,6 +582,7 @@ header {
     font-size: 16px;
     line-height: 1.6;
     margin-bottom: 30px;
+    color: #666;
 }
   
 .contact-info {
@@ -592,10 +595,11 @@ header {
     display: flex;
     align-items: center;
 }
+
   
 .contact-method i {
     font-size: 20px;
-    color: #40e0d0;
+    color: #fff;
     margin-right: 10px;
 }
   
@@ -687,6 +691,7 @@ header {
 
 .footer-subscribe {
   flex-basis: 30%;
+  
 }
 
 .footer-subscribe h3 {
@@ -699,15 +704,18 @@ header {
   font-size: 14px;
   line-height: 1.6;
   margin-bottom: 20px;
+  word-wrap: break-word;
+  width: 300px;
 }
 
 .subscribe-form {
   display: flex;
+  padding-right: 120px;
 }
 
 .subscribe-form input {
   flex-grow: 1;
-  padding: 15px;
+  padding: 10px ;
   font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 4px 0 0 4px;
@@ -715,10 +723,10 @@ header {
 
 .subscribe-btn {
   background-color: #40e0d0;
-  color: black;
+  color: #212121;
   border: none;
   padding: 10px 15px;
-  font-size: 16px;
+  font-size: 14px;
   border-radius: 0 4px 4px 0;
   cursor: pointer;
   font-weight: bold;
@@ -726,6 +734,10 @@ header {
 
 .subscribe-btn:hover{
   background-color: #0cc0b1;
+}
+
+.footer-menu{
+  margin-left: 120px;
 }
 
 .footer-menu h3 {
@@ -758,6 +770,7 @@ header {
 
 .footer-contact {
   flex-basis: 20%;
+  margin-left: 150px;
 }
 
 .footer-contact h3 {
